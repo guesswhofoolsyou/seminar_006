@@ -17,9 +17,9 @@ double FindCrossX(double a, double c, double b, double d)
     return x;
 }
 
-double FindCrossY (double b, double d, double x)
+double FindCrossY(double b, double d, double x)
 {
-    double y = b*x + d;
+    double y = b * x + d;
     return y;
 }
 
@@ -29,11 +29,11 @@ double firstK = GetNumber("Введите угловой коэфицент пе
 
 double secondB = GetNumber("Введите координату пересечения второй прямой с осью: ");
 double secondK = GetNumber("Введите угловой коэфицент второй прямой: ");
+Console.WriteLine();
 
-
-if ((firstK==secondK) && (firstB != secondB))
+if ((firstK == secondK) && (firstB != secondB))
     Console.WriteLine("Прямые параллельны");
-else if ((firstK==secondK) && (firstB == secondB))
+else if ((firstK == secondK) && (firstB == secondB))
     Console.WriteLine("Введена одна прямая");
 else
 {
